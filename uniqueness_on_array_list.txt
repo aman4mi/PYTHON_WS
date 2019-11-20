@@ -1,0 +1,11 @@
+var result = rightMasterData.reduce((unique, o) => {
+                        if (!unique.some(obj => obj.id === o.id && obj.parent === o.parent)) {
+                            unique.push(o);
+                        }
+                        return unique;
+                    }, []);
+					
+					
+					
+					
+//rightMasterData --is a json object. 
